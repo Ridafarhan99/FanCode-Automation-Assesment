@@ -7,7 +7,7 @@ import org.json.simple.parser.ParseException;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FanCodeUserTest {
+public class TestFanCodeUser {
     FanCodeUserChecker userChecker = new FanCodeUserChecker();
 
     @Test
