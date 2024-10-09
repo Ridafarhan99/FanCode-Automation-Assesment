@@ -9,7 +9,7 @@ Follow these steps to set up the project from GitHub to your local machine:
 2. **Run the following command to clone the repository:**
 
 ```bash
-$ git clone https://github.com/username/FanCodeTestAutomation.git
+$ git clone https://github.com/Ridafarhan99/FanCode-Automation-Assesment.git
 ```
 ## Step 2: Navigate to the Project Directory
 
