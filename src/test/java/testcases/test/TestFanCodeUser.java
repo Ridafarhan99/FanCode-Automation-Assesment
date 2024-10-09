@@ -1,4 +1,4 @@
-package testcases;
+package testcases.test;
 
 import logic.FanCodeUserChecker;
 import org.json.simple.JSONArray;
