@@ -13,8 +13,8 @@ public class TestFanCodeUser {
     @Test
     public void validateFanCodeUsersCompletionRate() throws ParseException {
         JSONArray users = userChecker.getUsersFromFanCode();
-
-        //Loop through each user from FanCode city
+        System.out.println("Total Users in FanCode City:"+users.size());
+        //loop through each user from FanCode city
         for(Object userObj:users){
             JSONObject user = (JSONObject) userObj;
             int userID = ((Long) user.get("id")).intValue();
@@ -22,9 +22,9 @@ public class TestFanCodeUser {
 
             //calculating the completed task percentage
             double completionPercentage = userChecker.getCompletedPercentage(userID);
-            System.out.println("User: " + userName + ", Completion: " + completionPercentage + "%");
+            System.out.println(" User Name: " + userName + ", Completion: " + completionPercentage + "%");
 
-            // Assert that the user has more than 50% tasks completed
+            //assert that the user has more than 50% tasks completed
             Assert.assertTrue("User " + userName + " has more than 50% tasks completed.",completionPercentage > 50);
         }
     }

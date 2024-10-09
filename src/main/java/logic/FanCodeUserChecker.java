@@ -45,7 +45,7 @@ public class FanCodeUserChecker {
         long completedTasks = todos.stream()
                 .filter(task -> (Boolean) ((JSONObject) task).get("completed"))
                 .count();
-
+        System.out.print("Completed: "+completedTasks + " out of "+totalTasks + " Tasks");
         return (double) completedTasks / totalTasks * 100;
     }
 }
